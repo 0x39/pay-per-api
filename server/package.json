@@ -1,0 +1,17 @@
+{
+  "name": "pay-per-api-server",
+  "version": "1.0.0",
+  "description": "A server implementing a pay per API request scheme with IOTAs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Dukakis",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "iota.lib.js": "^0.2.7",
+    "redis": "^2.7.1"
+  }
+}

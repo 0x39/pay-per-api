@@ -1,0 +1,661 @@
+#App {
+  text-align: center;
+}
+
+#App-logo {
+  height: 80px;
+}
+
+#App-home {
+  height: 100vh;
+  background: linear-gradient(#1121E8, #357CFC);
+  color: #fff;
+}
+
+#App-home-container {
+  padding-top: 80px;
+  position: relative;
+  z-index: 100;
+}
+
+#App-header {
+  animation: fade-in .6s ease 1;
+}
+
+#App-intro {
+  animation: fade-in .6s ease 1;
+}
+
+#App-title {
+  font-size: 58px;
+}
+
+#App-title-thin {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-weight: 300;
+}
+
+#App-subtitle {
+  color: #FEC404;
+}
+
+#App-subtitle-white {
+  color: #fff;
+}
+
+#App-description {
+  font-family: 'Roboto';
+  font-weight: 100 !important;
+  font-size: 24px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+#App-buttons {
+  perspective: 500;
+  padding: 60px 0;
+}
+
+.App-button {
+  padding: 18px 0;
+  border-radius: 5px;
+  width: 280px;
+  margin: 12px 12px;
+  font-family: 'Hind Vadodara', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0,0,0,.07);
+  transition: all .2s ease;
+  display: inline-block;
+}
+.App-button:hover {
+  transition-duration: .4s;
+}
+
+.App-primary-button {
+  color: #fff;
+  background: linear-gradient(90deg, #FA591B, #FEC604);
+  animation: intro-button-left 0.8s ease 1;
+  transform: scale(1);
+}
+
+.App-primary-button:hover {
+  /*transform: rotateY(20deg);*/
+  transform: scale(1.05);
+}
+
+.App-secondary-button {
+  color: #FEC404;
+  border: 1px solid #FEC404;
+  transform: scale(1);
+  animation: intro-button-right 0.8s ease 1;
+}
+
+.App-secondary-button:hover {
+  /*transform: rotateY(-20deg);*/
+  transform: scale(1.05);
+  background: linear-gradient(90deg, rgba(255,255,255,.18), transparent);
+}
+
+@keyframes intro-button-left {
+  from {
+    opacity: 0;
+    transform: scale(.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes intro-button-right {
+  from {
+    opacity: 0;
+    transform: scale(.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes pop-button {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(.94);
+  }
+}
+
+@keyframes pop-client {
+  from {
+    transform: scale(0.4);
+  }
+  to {
+    transform: scale(.8);
+  }
+}
+
+#tangle {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  opacity: .08;
+  animation: tangle-fade-in 3s ease;
+}
+
+@keyframes tangle-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+
+#how-it-works-tangle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .05;
+  animation: tangle2-fade-in 3s ease;
+}
+
+@keyframes tangle2-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.05;
+  }
+}
+
+.App-h3 {
+  display: none;
+  padding: 60px 0 60px 0;
+  font-size: 24px;
+  color: #1121E8;
+  text-transform: uppercase;
+  animation: fade-in 0.8s ease;
+}
+
+#how-it-works-wrap {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#how-it-works {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  perspective: 500;
+  position: relative;
+  background: radial-gradient(#fff 30%, rgba(255,255,255,0.1));
+}
+
+#App-how-it-works-description {
+  display: none;
+  position: relative;
+  width: 700px;
+  height: 260px;
+  margin: auto;
+  perspective: 500;
+  animation: fade-in 0.8s ease;
+}
+
+#App-how-it-works-dots {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.App-how-it-works-section {
+  width: 170px;
+  text-align: center;
+  position: absolute;
+  height: 50%;
+}
+
+.App-how-it-works-section p {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: #777;
+  padding: 4px 0;
+}
+.App-how-it-works-section b {
+  color: #444;
+  font-weight: 400;
+}
+
+#App-how-it-works-iota {
+  top: -30px;
+  left: 50%;
+  margin-left: -85px;
+  animation: iota 15s infinite;
+}
+
+#App-how-it-works-iota-logo {
+  width: 64px;
+  animation: pop .8s ease;
+}
+
+#App-how-it-works-client {
+  bottom: 20px;
+  left: 0;
+  margin-left: 0px;
+  animation: client 15s infinite;
+}
+
+#App-how-it-works-service {
+  bottom: 20px;
+  right: 0;
+  margin-left: 0;
+  animation: service 15s infinite;
+}
+
+#how-it-works h5 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 100%;
+  padding: 14px 0 0 0;
+}
+
+.App-how-it-works-img {
+  transform: scale(1);
+  height: 100%;
+  position: relative;
+  top: 16px;
+  width: auto;
+}
+
+#App-how-it-works-client .App-how-it-works-img {
+  transform: scale(.8);
+  animation: pop-client .8s ease;
+}
+
+#App-how-it-works-service .App-how-it-works-img {
+  animation: pop .8s ease;
+}
+
+.App-how-it-works-indicator {
+  user-select: none;
+  position: absolute;
+  top: 30px;
+  width: 26px;
+  height: 26px;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-family: 'Hind Vadodara', sans-serif;
+  opacity: 0;
+  transform-origin: 50% 100%;
+}
+
+.App-how-it-works-indicator:hover {
+  cursor: default;
+}
+
+#App-how-it-works-minus-one {
+  left: 20%;
+  background: linear-gradient(45deg, rgba(254, 198, 4, 0.4), rgba(254, 198, 4, 0.1));
+  color: #FA591B;
+  animation: minus-one 15s infinite 0.6s;
+}
+
+#App-how-it-works-minus-one span {
+  position: relative;
+  left: -4px;
+  top: -3px;
+}
+
+#App-how-it-works-plus-one {
+  right: 20%;
+  background: linear-gradient(45deg, rgba(81, 233, 215, .4), rgba(81, 233, 215, 0.1));
+  color: #1121E8;
+  transform-origin: 0% 0%;
+  animation: plus-one 15s infinite 0.6s;
+}
+
+#App-how-it-works-plus-one span {
+  position: relative;
+  left: -12px;
+  top: -3px;
+}
+
+#App-how-it-works-response {
+  position: relative;
+  top: 70%;
+  left: 50%;
+  margin-left: -25px;
+  line-height: 60px;
+  text-align: center;
+  width: 50px;
+  height: 60px;
+  border-radius: 6px;
+  opacity: 0;
+  background: linear-gradient(90deg, #1121E8, #357CFC);
+  color: #fff;
+  box-shadow: 0 0 3px #fff;
+  font-family: 'Hind Vadodara', sans-serif;
+  animation: response 15s infinite 0.6s;
+}
+
+#App-how-it-works-response span {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-weight: 500;
+}
+
+@keyframes minus-one {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(100px) translateX(-90px);
+  }
+  2% {
+    opacity: 1;
+    transform: scale(1) translateY(0) translateX(0);
+  }
+  33.33% {
+    opacity: 1;
+    transform: scale(1) translateY(0) translateX(0);
+  }
+  36.33% {
+    opacity: 0;
+    transform: scale(1) translateY(0) translateX(70px);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1) translateY(0) translateX(70px);
+  }
+}
+
+@keyframes plus-one {
+  from {
+    opacity: 0;
+    transform: scale(1) translateY(0) translateX(-70px);
+  }
+  33.33% {
+    opacity: 0;
+    transform: scale(1) translateY(0) translateX(-70px);
+  }
+  36.33% {
+    opacity: 1;
+    transform: scale(1) translateY(0) translateX(0);
+  }
+  66.66% {
+    opacity: 1;
+    transform: scale(1) translateY(0) translateX(0);
+  }
+  69.66% {
+    opacity: 0;
+    transform: scale(1) translateY(100px) translateX(90px);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1) translateY(100px) translateX(90px);
+  }
+}
+
+@keyframes response {
+  from {
+    opacity: 0;
+    transform: translateX(190px) scale(0.4);
+  }
+  66.66% {
+    opacity: 0;
+    transform: translateX(190px) scale(0.4);
+  }
+  72.66% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+  93.99% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+  99.99% {
+    opacity: 0;
+    transform: translateX(-190px) scale(0.4);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-190px) scale(0.4);
+  }
+}
+
+@keyframes client {
+  from {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  3% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  33.33% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  36.33% {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+}
+
+@keyframes iota {
+  from {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  33.33% {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  36.33% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  66.66% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  69.66% {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+}
+
+@keyframes service {
+  from {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  33.33% {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  66.66% {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+  69.66% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  96.99% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.95);
+  }
+}
+
+#how-it-works .action-button {
+  display: inline-block;
+  margin-top: 90px;
+  width: 250px;
+  background: #FEC604;
+  color: #000;
+  transition-duration: 0.2s;
+  transform: scale(.94);
+  border-radius: 30px;
+  transform-origin: 50% top;
+  position: relative;
+  z-index: 1000;
+  animation: fade-in 1s ease, pop-button 0.8s ease;
+}
+
+#how-it-works .action-button:hover {
+  transform: rotateX(24deg) scale(1);
+  background: #ffd649;
+  transition-duration: 0.6s;
+}
+
+#how-it-works .fade-button {
+  opacity: 0 !important;
+  transition-duration: 0.2s !important;
+  transform: scale(0.4) translateY(30px) !important;
+}
+
+#App-footer {
+  width: 100%;
+  padding-top: 56px;
+  height: 54px;
+  background: linear-gradient(rgba(255,255,255,0.1) 50%, #c6f8ff);
+  position: absolute;
+  bottom: 0;
+  font-family: 'Hind Vadodara', sans-serif;
+  color: #999;
+  letter-spacing: 1px;
+  font-size: 16px;
+  z-index: 3001;
+}
+
+#App-footer-copy {
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+#App-footer a {
+  display: inline-block;
+  padding: 3px 2px 2px 2px;
+  margin: 0 10px;
+  color: #777;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+#App-footer a:hover {
+  padding-bottom: 5px;
+  transform: translateY(-5px);
+  border-bottom: 3px solid #51E9D7;
+  transition-duration: 0.3s;
+}
+/* Portrait */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 568px)
+  and (orientation: portrait) {
+    #App-home {
+      width: 100vw;
+    }
+    #App-home-container {
+      transform: scale(0.8);
+      padding-top: 0px;
+    }
+    #how-it-works {
+    }
+    .App-h3 {
+      padding-top: 50px;
+      font-size: 20px;
+    }
+    #App-how-it-works-description {
+      height: 250px;
+      transform-origin: 50% 0%;
+      transform: scale(0.4);
+      margin-left: -350px;
+      left: 50%;
+    }
+    .App-how-it-works-section {
+      height: 120px;
+      width: 210px;
+    }
+    #App-how-it-works-iota {
+      margin-left: -105px;
+    }
+    #App-how-it-works-dots {
+      height: 250px;
+    }
+    #App-how-it-works-description p {
+      font-size: 19px;
+    }
+    #tangle {
+      width: 100%;
+    }
+    #how-it-works-tangle {
+      width: 100%;
+    }
+    #how-it-works .action-button {
+      transform: translateY(-150px) scale(0.8);
+    }
+    #how-it-works .action-button:hover {
+      transform: translateY(-150px) scale(0.8);
+    }
+    #App-footer {
+      padding-bottom: 30px;
+      font-size: 14px;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
